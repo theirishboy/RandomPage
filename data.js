@@ -1,57 +1,107 @@
 const gifts = [
-  // Small gifts (under 20€)
+  // Small budget gifts (under 20€)
   {
-    name: "Un Coffret de Thés Gourmands",
-    description: "Une sélection de thés parfumés pour les amateurs de saveurs délicates.",
+    name: "Une Tasse Personnalisée",
+    description: "Une tasse unique avec un message ou une photo spéciale.",
     priceRange: "small"
   },
   {
-    name: "Un Livre Best-Seller",
-    description: "Le dernier roman à succès pour des heures de lecture passionnante.",
+    name: "Un Livre de Poche",
+    description: "Un roman captivant pour s'évader.",
     priceRange: "small"
   },
   {
-    name: "Une Bougie Parfumée Artisanale",
-    description: "Une bougie faite main aux senteurs relaxantes.",
+    name: "Une Plante Succulente",
+    description: "Une petite plante décorative facile à entretenir.",
     priceRange: "small"
   },
   {
-    name: "Un Mug Personnalisé",
-    description: "Une tasse unique avec un design original.",
+    name: "Un Porte-clés Original",
+    description: "Un accessoire pratique et personnalisé.",
     priceRange: "small"
   },
   {
-    name: "Un Kit de Jardinage",
-    description: "Le nécessaire pour débuter son petit jardin d'herbes aromatiques.",
+    name: "Des Chaussettes Rigolotes",
+    description: "Des chaussettes colorées avec des motifs amusants.",
     priceRange: "small"
   },
   {
-    name: "Un Carnet de Notes Artistique",
-    description: "Un beau carnet pour écrire ses pensées et dessiner.",
+    name: "Un Carnet de Notes",
+    description: "Un joli carnet pour noter ses idées.",
     priceRange: "small"
   },
   {
-    name: "Une Paire de Chaussettes Rigolotes",
-    description: "Des chaussettes colorées et originales pour égayer la journée.",
+    name: "Un Masque Facial",
+    description: "Un masque relaxant pour un moment de détente.",
     priceRange: "small"
   },
   {
-    name: "Un Porte-Clés Tech",
-    description: "Un porte-clés intelligent pour retrouver ses objets perdus.",
+    name: "Une Bougie Parfumée",
+    description: "Une petite bougie pour une ambiance cozy.",
     priceRange: "small"
   },
   {
-    name: "Un Set de Pâtisserie",
-    description: "Les ustensiles essentiels pour réaliser de délicieux gâteaux.",
+    name: "Un Mug Thermos",
+    description: "Pour garder son café chaud toute la matinée.",
     priceRange: "small"
   },
   {
-    name: "Un Puzzle 3D",
-    description: "Un puzzle créatif pour construire une belle structure en 3D.",
+    name: "Un Puzzle de Poche",
+    description: "Un petit puzzle pour se divertir.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Set de Stickers",
+    description: "Des autocollants décoratifs et originaux.",
+    priceRange: "small"
+  },
+  {
+    name: "Une Gourde Eco-friendly",
+    description: "Une gourde réutilisable pour rester hydraté.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Support de Téléphone",
+    description: "Un support pratique pour bureau ou voiture.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Set de Marque-pages",
+    description: "Des marque-pages élégants pour les lecteurs.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Mini Ventilateur USB",
+    description: "Pour se rafraîchir pendant l'été.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Pack de Post-it Créatifs",
+    description: "Des notes adhésives colorées et originales.",
+    priceRange: "small"
+  },
+  {
+    name: "Une Paire de Gants Tactiles",
+    description: "Des gants pour utiliser son smartphone au chaud.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Set de Badges Fun",
+    description: "Des badges décoratifs pour personnaliser ses affaires.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Organiseur de Câbles",
+    description: "Pour ranger ses câbles proprement.",
+    priceRange: "small"
+  },
+  {
+    name: "Un Mini Album Photo",
+    description: "Un petit album pour conserver ses souvenirs.",
     priceRange: "small"
   },
 
-  // Medium gifts (under 50€)
+  // Medium budget gifts (under 50€)
   {
     name: "Une Enceinte Bluetooth Portable",
     description: "Pour écouter sa musique partout avec un son de qualité.",
@@ -100,6 +150,66 @@ const gifts = [
   {
     name: "Une Manette de Jeu Sans Fil",
     description: "Pour les sessions de gaming sur PC ou smartphone.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Casque Audio Gaming",
+    description: "Un casque pour une expérience de jeu immersive.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Écran de Projection Portable",
+    description: "Pour des présentations ou des soirées cinéma.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Kit de Réparation de Bicyclette",
+    description: "Pour les amateurs de vélo qui veulent être autonomes.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Appareil Photo Instantané",
+    description: "Pour des photos physiques instantanées.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Set de Câbles et Adaptateurs",
+    description: "Pour connecter tous ses appareils sans souci.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Éclairage LED pour Ordinateur",
+    description: "Pour une ambiance lumineuse personnalisée.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Microphone USB pour Podcast",
+    description: "Pour enregistrer des podcasts de qualité.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Kit de Nettoyage pour Écran",
+    description: "Pour garder ses écrans propres et sans rayures.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Sac à Dos pour Ordinateur Portable",
+    description: "Un sac pratique et protecteur pour son ordinateur.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Set de Haut-parleurs pour Ordinateur",
+    description: "Pour une expérience audio améliorée.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Disque Dur Externe",
+    description: "Pour sauvegarder ses données importantes.",
+    priceRange: "medium"
+  },
+  {
+    name: "Un Kit de Réparation de Téléphone",
+    description: "Pour les réparations de téléphone DIY.",
     priceRange: "medium"
   },
 
@@ -154,6 +264,71 @@ const gifts = [
     description: "Un drone facile à piloter pour des photos aériennes.",
     priceRange: "big"
   },
+  {
+    name: "Un Écran de Gaming 24 Pouces",
+    description: "Un écran pour une expérience de jeu fluide.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Ordinateur Portable Ultrabook",
+    description: "Un ordinateur portable léger et puissant.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Projecteur LED pour Maison",
+    description: "Pour des projections de films ou de jeux.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Set de Cuisson Induction",
+    description: "Un set de pots et de casseroles pour une cuisson saine.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Appareil de Musculation pour Maison",
+    description: "Un appareil pour rester en forme chez soi.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Écran de Surveillance pour Maison",
+    description: "Pour une sécurité renforcée à la maison.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Kit de Réparation de Maison",
+    description: "Pour les petits travaux de réparation.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Set de Jardinage Électrique",
+    description: "Des outils pour un jardinage facile et efficace.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Système de Son pour Maison",
+    description: "Un système de son pour une expérience audio immersive.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Appareil de Nettoyage à Vapeur",
+    description: "Pour un nettoyage en profondeur sans produits chimiques.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Set de Câbles pour Maison",
+    description: "Des câbles pour connecter tous ses appareils.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Éclairage LED pour Maison",
+    description: "Un éclairage personnalisable pour une ambiance unique.",
+    priceRange: "big"
+  },
+  {
+    name: "Un Système de Sécurité pour Maison",
+    description: "Un système pour une sécurité renforcée.",
+    priceRange: "big"
+  },
 
   // Luxury gifts (Smic LinkedIn > 100€)
   {
@@ -204,6 +379,56 @@ const gifts = [
   {
     name: "Un iPad Pro avec Apple Pencil",
     description: "La tablette ultime pour les créatifs et les professionnels.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Une Cave à Vin Connectée",
+    description: "Pour les amateurs de vin, avec contrôle via smartphone.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Home Cinema Bose",
+    description: "Une expérience sonore immersive pour votre salon.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Vélo Électrique Haut de Gamme",
+    description: "Pour des balades sans effort avec style.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Appareil Photo Professionnel",
+    description: "Pour des photos de qualité professionnelle.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Spa Gonflable Premium",
+    description: "Pour transformer son jardin en oasis de détente.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Set de Bagages Louis Vuitton",
+    description: "Voyagez avec élégance et style.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Une Machine à Expresso Professionnelle",
+    description: "Pour un café digne des meilleurs baristas.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Drone DJI Pro",
+    description: "Pour des prises de vue aériennes professionnelles.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Tapis de Course Connecté",
+    description: "Avec écran intégré et programmes d'entraînement personnalisés.",
+    priceRange: "luxury"
+  },
+  {
+    name: "Un Bureau Ergonomique Motorisé",
+    description: "Pour un espace de travail optimal et confortable.",
     priceRange: "luxury"
   }
 ];
