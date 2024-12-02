@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadeau Surprise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="gift-container">
+    <div id="gift" onclick="openGift()"></div>
+    <div id="price-selector">
+      <button class="price-button" onclick="selectPriceRange('small')">Petit Budget<br>(< 20€)</button>
+      <button class="price-button" onclick="selectPriceRange('medium')">Budget Moyen<br>(< 50€)</button>
+      <button class="price-button" onclick="selectPriceRange('big')">Grand Budget<br>(< 100€)</button>
+      <button class="price-button luxury" onclick="selectPriceRange('luxury')">Smic LinkedIn<br>(> 100€)</button>
+    </div>
+    <div id="result">Clique sur le cadeau pour découvrir ta surprise !</div>
+    <div id="gift-details"></div>
+    <button class="button" onclick="resetGift()" style="display: none;">Nouveau cadeau</button>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6e9ff 100%);
+  font-family: 'Arial', sans-serif;
+}
+
+#gift-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#gift {
+  width: 200px;
+  height: 200px;
+  background: url('https://cdn-icons-png.flaticon.com/512/4213/4213958.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 40px auto;
+}
+
+#gift:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+#gift.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#gift-details {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+  max-width: 400px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  height: 80px;
+  overflow-y: auto;
+}
+
+#gift-details.show {
+  opacity: 1;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+#price-selector {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.price-button {
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  background-color: white;
+  color: #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.price-button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.price-button.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.price-button.luxury {
+  border-color: #FFD700;
+  color: #FFD700;
+  background: linear-gradient(145deg, rgba(255,215,0,0.1) 0%, rgba(255,215,0,0) 100%);
+}
+
+.price-button.luxury:hover,
+.price-button.luxury.selected {
+  background: linear-gradient(145deg, #FFD700 0%, #FFA500 100%);
+  border-color: #FFA500;
+  color: white;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.3);
+}
